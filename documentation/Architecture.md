@@ -19,7 +19,95 @@ classes.(will explain reason in class if needed)
 
 c. Database
 i. Tables and their names and purpose
+Data Base- Customer_info
+
+Table users
+name(varchar)
+Username(primary key)
+email-id (no dup values)(varchar)
+phone number(int)
+gender(char(1))
+dob(date)
+
+Table Login_info
+Username(Primary key)(varchar)
+Password(varchar)
+
+
+Database Money_management
+
+Table E-bill:
+Username(foreign key from Customer_info)
+Payment_date (date)
+Unique_Service_number(Primary key)(char)
+Amount (int)
+State(varchar)
+City(varchar)
+Resedential Complex name(varchar)
+Meter_no (char)
+
+
+Table Water-bill:
+Username(foreign key from Customer_info)
+Payment_date (date)
+State(varchar)
+City(varchar)
+Resedential_Complex_name(varchar)
+Unique_Service_number(Primary key)(int)
+Amount (int)
+
+Table Phone-bill:
+Username(foreign key from Customer_info)
+Phone_number(int)
+Service_Provider
+Payment_date(date)
+Plan_choosen (Boolean) 
+Amount (int)
+
+
+Table Wifi-bill:
+Service_ID (int)
+Service_operator (char)
+Plan_choosen (Boolean)
+Payment_date (date)
+Amount (int)
+
+
+DataBase : Personal Care
+
+Table Health_Tracker:
+Username(foreign key from customer_info)
+Date(primary key)
+Sleep_Duration (int)
+Workout_Duration (int)
+
+Table Rate_Health:
+Username(foreign key from customer_info)
+Date(primary key)
+Health_Score (int)
+
+Table Rate_Attitude:
+Username(foreign key from customer_info)
+Date(primary key)
+Attitude_Score (int)
+
+Table Mood_Tracker:
+Username(foreign key from customer_info)
+Date(primary key)
+Happy_Mood(Boolean)
+Sad_Mood(Boolean)
+Medium_Mood(Boolean)
+
+Table mini_diary:
+Username(foreign key from customer_info)
+daily_notes (varchar)
+
+
+
+
+
 ii. Schema designs
+
 
 
 
