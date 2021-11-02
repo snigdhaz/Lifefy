@@ -113,7 +113,12 @@ ii. Schema designs
 
 d. Overview
 i. Intro to the design of the project
+‘Lifefy’ is a Lifestyle Management Application aiming at making everyday lives easier by segregating the most essential elements of a healthy and responsible lifestyle under one interface. Our two main features are:
+>Money Management - A portal to pay off all the essential bills like phone, water, electricity, wifi, etc. 
+>Personal Care - A portal to track your daily habits (diet, workout, etc), your mood, your day and rate parts of your day.
+
 ii. A diagram representing front end back end and arrows showing how they
 connect (via HTTP API or via connectors of db)
 iii. Give a general flow of the application through a tree diagram (website
-navigation chart) e.g., 
+navigation chart) e.g.
+
