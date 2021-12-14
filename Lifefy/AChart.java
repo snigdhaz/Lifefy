@@ -9,7 +9,7 @@ import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.*;
 import org.jfree.data.jdbc.JDBCCategoryDataset;
 
- public class AChart {
+ class AChart {
 		AChart(){
 		try
 		{
