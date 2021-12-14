@@ -16,7 +16,7 @@ class SelfCare extends JFrame implements ActionListener {
     SelfCare() {
         
         setTitle("Self Care");
-        setSize(450,640);
+        setSize(1200,800);
         setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         setResizable(false);
         setLocationRelativeTo(null);
@@ -24,32 +24,42 @@ class SelfCare extends JFrame implements ActionListener {
         panel.setLayout(null);
 
         JLabel text = new JLabel("Start taking care of yourself now!");
-        text.setFont(new Font("Lucinda Grande", Font.PLAIN, 18));
-        text.setBounds(95,100,300, 100);
+        text.setForeground(Color.WHITE);
+        text.setFont(new Font("Lucinda Grande", Font.PLAIN, 35));
+        text.setBounds(325,330,600, 50);
         panel.add(text);
         
-        body =new JButton("Body");   
-        body.setBounds(65,300,100, 20);    
+        body =new JButton("Body"); 
+        body.setFont(new Font("Lucida Grande", Font.PLAIN,20));
+        body.setForeground(new Color(155, 119, 185));  
+        body.setBounds(250,430,200,50);  
+        panel.add(body);  
         body.addActionListener(this);
-        panel.add(body); 
+
         
         soul =new JButton("Soul");   
-        soul.setBounds(175,300,100, 20);    
+        soul.setFont(new Font("Lucida Grande", Font.PLAIN,20));
+        soul.setForeground(new Color(155, 119, 185));  
+        soul.setBounds(505,430,200,50);    
         soul.addActionListener(this);
         panel.add(soul);
         
-        cal =new JButton("Mini Diary");  
-        cal.setBounds(285,300,100, 20);    
+        cal =new JButton("Mini Diary"); 
+        cal.setFont(new Font("Lucida Grande", Font.PLAIN,20));
+        cal.setForeground(new Color(155, 119, 185));   
+        cal.setBounds(760,430,200,50);    
         cal.addActionListener(this);
         panel.add(cal); 
         
-        back =new JButton("Back");  
-        back.setBounds(200,400,75, 20);    
+        back =new JButton("Back"); 
+        back.setFont(new Font("Lucida Grande", Font.PLAIN,20));
+        back.setForeground(new Color(155, 119, 185));    
+        back.setBounds(90,670,150,40);    
         back.addActionListener(this);
         panel.add(back);
 
         pic = new JLabel(new ImageIcon("SC_mainpage/p3.gif"));
-        pic.setBounds(0, 0, 450, 636);
+        pic.setBounds(0, 0, 1200, 800);
         panel.add(pic);
         setVisible(true);
         } 
@@ -91,27 +101,33 @@ class SoulCare extends JFrame implements ActionListener {
         
         setTitle("Soul Care");
         setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
-        setSize(400,400);
+        setSize(1200,800);
         setLocationRelativeTo(null);
         setResizable(false);
         setLayout(null);
         
         
-        attrate.setBounds(100,100,200, 40);    
+        attrate.setBounds(385,250,500, 75); 
+        attrate.setFont(new Font("Lucida Grande", Font.PLAIN,40));   
+        attrate.setForeground(new Color(121, 164, 168));
         attrate.addActionListener(this);
         panel.add(attrate);
         
-        
-        moodtrack.setBounds(100,200,200, 40);    
+
+        moodtrack.setBounds(385,450,500, 75);  
+        moodtrack.setFont(new Font("Lucida Grande", Font.PLAIN,40));
+        moodtrack.setForeground(new Color(121, 164, 168));  
         moodtrack.addActionListener(this);
         panel.add(moodtrack);
          
-        back.setBounds(50,300,75, 20);    
+        back.setBounds(100,650,150, 50);  
+        back.setFont(new Font("Lucida Grande", Font.PLAIN,40));
+        back.setForeground(new Color(121, 164, 168));    
         back.addActionListener(this);
         panel.add(back); 
 
         pic = new JLabel(new ImageIcon("SC_mainpage/scpic.png"));
-        pic.setBounds(0, 0, 400, 400);
+        pic.setBounds(0, 0, 1200, 800);
         panel.add(pic);
        
         setVisible(true);
@@ -149,26 +165,32 @@ class BodyCare extends JFrame implements ActionListener{
     BodyCare() {
         setTitle("Body Care");
         setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
-        setSize(400,400);
+        setSize(1200,800);
         setResizable(false);
         setLayout(null);
         setLocationRelativeTo(null);    
         
-        healthrate.setBounds(100,100,200, 40);    
+        healthrate.setBounds(385,250,500, 75); 
+        healthrate.setFont(new Font("Lucida Grande", Font.PLAIN,40));  
+        healthrate.setForeground(new Color(35, 84, 62));   
         healthrate.addActionListener(this);
         panel.add(healthrate);
         
         
-        healthtrack.setBounds(100,200,200, 40);    
+        healthtrack.setBounds(385,450,500, 75);  
+        healthtrack.setFont(new Font("Lucida Grande", Font.PLAIN,40));
+        healthtrack.setForeground(new Color(35, 84, 62));  
         healthtrack.addActionListener(this);
         panel.add(healthtrack);
          
-        back.setBounds(50,300,75, 20);    
+        back.setBounds(100,650,150, 50);  
+        back.setFont(new Font("Lucida Grande", Font.PLAIN,40));
+        back.setForeground(new Color(35, 84, 62));      
         back.addActionListener(this);
         panel.add(back);
 
         pic = new JLabel(new ImageIcon("SC_mainpage/bcpic.png"));
-        pic.setBounds(0, 0, 400, 400);
+        pic.setBounds(0, 0, 1200, 800);
         panel.add(pic);
    
        
@@ -212,8 +234,8 @@ class Bcare extends JFrame implements ActionListener{
 
     Bcare(){
         
-        setTitle("WELCOME!!");
-        setSize(1350,650);
+        setTitle("Body Care");
+        setSize(1200,800);
         setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(false);
@@ -224,38 +246,12 @@ class Bcare extends JFrame implements ActionListener{
         water_button.setForeground(new Color(211,211,211));
         water_button.setBorderPainted(false);
         water_button.setContentAreaFilled(false);
-        water_button.setBounds(465,150,200, 100);
-        water_button.setFont(new Font("Arial", Font.BOLD, 18));   
+        water_button.setBounds(380,220,250,115);
+        water_button.setFont(new Font("Arial", Font.BOLD, 16));   
         water_button.addActionListener(this); 
         panel.add(water_button); 
         water_button.setVisible(true);
         wcheck = true;
-
-        sleep_button = new JButton("8 hour sleep");
-        sleep_button.setBackground(new Color(211,211,211));
-        sleep_button.setOpaque(false);
-        sleep_button.setForeground(new Color(211,211,211));
-        sleep_button.setBorderPainted(false);
-        sleep_button.setContentAreaFilled(false);
-        sleep_button.setBounds(465,300,200, 100);
-        sleep_button.setFont(new Font("Arial", Font.BOLD, 18));   
-        sleep_button.addActionListener(this); 
-        panel.add(sleep_button); 
-        sleep_button.setVisible(true);
-        slcheck = true;
-
-        meditate_button = new JButton(" 40 min Meditation");
-        meditate_button.setBackground(new Color(211,211,211));
-        meditate_button.setOpaque(false);
-        meditate_button.setForeground(new Color(211,211,211));
-        meditate_button.setBorderPainted(false);
-        meditate_button.setContentAreaFilled(false);
-        meditate_button.setBounds(615,450,200, 100);
-        meditate_button.setFont(new Font("Arial", Font.BOLD, 18));   
-        meditate_button.addActionListener(this); 
-        panel.add(meditate_button); 
-        meditate_button.setVisible(true);
-        mcheck = true;
 
         exercise_button = new JButton("30 min exercise");
         exercise_button.setBackground(new Color(211,211,211));
@@ -263,8 +259,8 @@ class Bcare extends JFrame implements ActionListener{
         exercise_button.setForeground(new Color(211,211,211));
         exercise_button.setBorderPainted(false);
         exercise_button.setContentAreaFilled(false);
-        exercise_button.setBounds(765,150,200, 100);
-        exercise_button.setFont(new Font("Arial", Font.BOLD, 18));   
+        exercise_button.setBounds(650,220,250, 115);
+        exercise_button.setFont(new Font("Arial", Font.BOLD, 16));   
         exercise_button.addActionListener(this); 
         panel.add(exercise_button); 
         exercise_button.setVisible(true);
@@ -276,12 +272,25 @@ class Bcare extends JFrame implements ActionListener{
         stretch_button.setForeground(new Color(211,211,211));
         stretch_button.setBorderPainted(false);
         stretch_button.setContentAreaFilled(false);
-        stretch_button.setBounds(1065,150,200, 100);
-        stretch_button.setFont(new Font("Arial", Font.BOLD, 18));   
+        stretch_button.setBounds(920,220,250, 115);
+        stretch_button.setFont(new Font("Arial", Font.BOLD, 16));   
         stretch_button.addActionListener(this); 
         panel.add(stretch_button); 
         stretch_button.setVisible(true);
         stcheck = true;
+
+        sleep_button = new JButton("8 hour sleep");
+        sleep_button.setBackground(new Color(211,211,211));
+        sleep_button.setOpaque(false);
+        sleep_button.setForeground(new Color(211,211,211));
+        sleep_button.setBorderPainted(false);
+        sleep_button.setContentAreaFilled(false);
+        sleep_button.setBounds(380,370,250, 115);
+        sleep_button.setFont(new Font("Arial", Font.BOLD, 16));   
+        sleep_button.addActionListener(this); 
+        panel.add(sleep_button); 
+        sleep_button.setVisible(true);
+        slcheck = true;
 
         sctime_button = new JButton("Less screen time");
         sctime_button.setBackground(new Color(211,211,211));
@@ -289,8 +298,8 @@ class Bcare extends JFrame implements ActionListener{
         sctime_button.setForeground(new Color(211,211,211));
         sctime_button.setBorderPainted(false);
         sctime_button.setContentAreaFilled(false);
-        sctime_button.setBounds(765,300,200, 100);
-        sctime_button.setFont(new Font("Arial", Font.BOLD, 18));   
+        sctime_button.setBounds(650,370,250, 115);
+        sctime_button.setFont(new Font("Arial", Font.BOLD, 16));   
         sctime_button.addActionListener(this); 
         panel.add(sctime_button); 
         sctime_button.setVisible(true);
@@ -302,12 +311,26 @@ class Bcare extends JFrame implements ActionListener{
         walk_button.setForeground(new Color(211,211,211));
         walk_button.setBorderPainted(false);
         walk_button.setContentAreaFilled(false);
-        walk_button.setBounds(1065,300,200, 100);
-        walk_button.setFont(new Font("Arial", Font.BOLD, 18));   
+        walk_button.setBounds(920,370,250, 115);
+        walk_button.setFont(new Font("Arial", Font.BOLD, 16));   
         walk_button.addActionListener(this); 
         panel.add(walk_button); 
         walk_button.setVisible(true);
         walkcheck = true;
+
+        meditate_button = new JButton(" 40 min Meditation");
+        meditate_button.setBackground(new Color(211,211,211));
+        meditate_button.setOpaque(false);
+        meditate_button.setForeground(new Color(211,211,211));
+        meditate_button.setBorderPainted(false);
+        meditate_button.setContentAreaFilled(false);
+        meditate_button.setBounds(535,520,250, 115);
+        meditate_button.setFont(new Font("Arial", Font.BOLD, 16));   
+        meditate_button.addActionListener(this); 
+        panel.add(meditate_button); 
+        meditate_button.setVisible(true);
+        mcheck = true;
+
 
         eat_button= new JButton(" Ate Healthy");
         eat_button.setBackground(new Color(211,211,211));
@@ -315,20 +338,16 @@ class Bcare extends JFrame implements ActionListener{
         eat_button.setForeground(new Color(211,211,211));
         eat_button.setBorderPainted(false);
         eat_button.setContentAreaFilled(false);
-        eat_button.setBounds(915,450,200, 100);
-        eat_button.setFont(new Font("Arial", Font.BOLD, 18));   
+        eat_button.setBounds(825,520,250, 115);
+        eat_button.setFont(new Font("Arial", Font.BOLD, 16));   
         eat_button.addActionListener(this); 
         panel.add(eat_button); 
         eat_button.setVisible(true);
         eatcheck = true;
 
        done= new JButton("Done");
-       done.setBackground(Color.WHITE);
-       done.setOpaque(true);
        done.setForeground(Color.BLACK);
-       done.setBorderPainted(true);
-       done.setContentAreaFilled(true);
-       done.setBounds(820,560,100,30);   
+       done.setBounds(1030,720,100,30);   
        done.addActionListener(this); 
        panel.add(done); 
        done.setVisible(true);
@@ -338,26 +357,26 @@ class Bcare extends JFrame implements ActionListener{
         back.setForeground(Color.BLACK);
         back.setBorderPainted(false);
         back.setContentAreaFilled(false);
-        back.setBounds(20,550,100, 20);  
+        back.setBounds(110,620,100, 20);  
         back.addActionListener(this); 
         panel.add(back); 
         back.setVisible(true);
 
         display_score = new JLabel("");
-        display_score.setBounds(186,196,198,213);
+        display_score.setBounds(116,356,158,213);
         display_score.setForeground(new Color(211,211,211) );
         display_score.setFont(new Font("Arial", Font.PLAIN, 54));
         panel.add(display_score);
 
         result = new JLabel("");
-        result.setBounds(40,500,400,20);
+        result.setBounds(10,720,400,20);
         result.setForeground(new Color(101, 67, 33));
         result.setFont(new Font("Arial", Font.PLAIN, 18));
         panel.add(result);
 
         panel.setLayout(null);
         background = new JLabel(new ImageIcon("ratebgs/bcf.png"));
-        background.setBounds(0,0,1350,650);
+        background.setBounds(0,0,1200,800);
         panel.add(background);
 
         setVisible(true); 
@@ -475,11 +494,11 @@ class Bcare extends JFrame implements ActionListener{
          }
          if(score>9)
          {
-            display_score.setBounds(165,192,198,213);
+            display_score.setBounds(142,253,198,213);
          }
          if(score<10)
          {
-            display_score.setBounds(186,196,198,213);
+            display_score.setBounds(157,253,198,213);
          }
          display_score.setText(String.valueOf(score));
          display_score.setVisible(true);
@@ -491,18 +510,19 @@ class Bcare extends JFrame implements ActionListener{
            
            if(score<8)
            {
+            result.setLocation(10,720);
             result.setText("You need to work more on your health :(");
             result.setVisible(true);
            }
            else if(score>7 && score<12)
            {
-            result.setLocation(60,500);
+            result.setLocation(30,720);
             result.setText("Good Job! You're on the right track");
             result.setVisible(true);
            }
            else if(score>12)
            {
-            result.setLocation(80,500);
+            result.setLocation(50,720);
             result.setText("Wow! Thats a great score!");
             result.setVisible(true);
 
@@ -527,8 +547,8 @@ class SoulCarer extends JFrame implements ActionListener{
 
     SoulCarer(){
         
-        setTitle("WELCOME!!");
-        setSize(1350,650);
+        setTitle("Soul Care");
+        setSize(1200,800);
         setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(false);
@@ -539,38 +559,12 @@ class SoulCarer extends JFrame implements ActionListener{
         laugh_button.setForeground(new Color(208, 223, 241));
         laugh_button.setBorderPainted(false);
         laugh_button.setContentAreaFilled(false);
-        laugh_button.setBounds(465,150,200, 100);
+        laugh_button.setBounds(380,220,250,115);
         laugh_button.setFont(new Font("Arial", Font.BOLD, 18));   
         laugh_button.addActionListener(this); 
         panel.add(laugh_button); 
         laugh_button.setVisible(true);
         lcheck = true;
-
-        gratitude_button = new JButton("Live in the moment");
-        gratitude_button.setBackground(new Color(208, 223, 241));
-        gratitude_button.setOpaque(false);
-        gratitude_button.setForeground(new Color(208, 223, 241));
-        gratitude_button.setBorderPainted(false);
-        gratitude_button.setContentAreaFilled(false);
-        gratitude_button.setBounds(465,300,200, 100);
-        gratitude_button.setFont(new Font("Arial", Font.BOLD, 16));   
-        gratitude_button.addActionListener(this); 
-        panel.add(gratitude_button); 
-        gratitude_button.setVisible(true);
-        gcheck = true;
-
-        reflection_buttonn = new JButton("Reflection");
-        reflection_buttonn.setBackground(new Color(208, 223, 241));
-        reflection_buttonn.setOpaque(false);
-        reflection_buttonn.setForeground(new Color(208, 223, 241));
-        reflection_buttonn.setBorderPainted(false);
-        reflection_buttonn.setContentAreaFilled(false);
-        reflection_buttonn.setBounds(615,450,200, 100);
-        reflection_buttonn.setFont(new Font("Arial", Font.BOLD, 18));   
-        reflection_buttonn.addActionListener(this); 
-        panel.add(reflection_buttonn); 
-        reflection_buttonn.setVisible(true);
-        fcheck = true;
 
         positive_button = new JButton("Stay Positive");
         positive_button.setBackground(new Color(208, 223, 241));
@@ -578,7 +572,7 @@ class SoulCarer extends JFrame implements ActionListener{
         positive_button.setForeground(new Color(208, 223, 241));
         positive_button.setBorderPainted(false);
         positive_button.setContentAreaFilled(false);
-        positive_button.setBounds(765,150,200, 100);
+        positive_button.setBounds(650,220,250,115);
         positive_button.setFont(new Font("Arial", Font.BOLD, 18));   
         positive_button.addActionListener(this); 
         panel.add(positive_button); 
@@ -591,12 +585,25 @@ class SoulCarer extends JFrame implements ActionListener{
         read_button.setForeground(new Color(208, 223, 241));
         read_button.setBorderPainted(false);
         read_button.setContentAreaFilled(false);
-        read_button.setBounds(1065,150,200, 100);
+        read_button.setBounds(920,220,250,115);
         read_button.setFont(new Font("Arial", Font.BOLD, 18));   
         read_button.addActionListener(this); 
         panel.add(read_button); 
         read_button.setVisible(true);
         readcheck = true;
+
+        gratitude_button = new JButton("Live in the moment");
+        gratitude_button.setBackground(new Color(208, 223, 241));
+        gratitude_button.setOpaque(false);
+        gratitude_button.setForeground(new Color(208, 223, 241));
+        gratitude_button.setBorderPainted(false);
+        gratitude_button.setContentAreaFilled(false);
+        gratitude_button.setBounds(380,370,250, 115);
+        gratitude_button.setFont(new Font("Arial", Font.BOLD, 16));   
+        gratitude_button.addActionListener(this); 
+        panel.add(gratitude_button); 
+        gratitude_button.setVisible(true);
+        gcheck = true;
 
         smile_button = new JButton("Smile");
         smile_button.setBackground(new Color(208, 223, 241));
@@ -604,25 +611,38 @@ class SoulCarer extends JFrame implements ActionListener{
         smile_button.setForeground(new Color(208, 223, 241));
         smile_button.setBorderPainted(false);
         smile_button.setContentAreaFilled(false);
-        smile_button.setBounds(765,300,200, 100);
+        smile_button.setBounds(650,370,250, 115);
         smile_button.setFont(new Font("Arial", Font.BOLD, 18));   
         smile_button.addActionListener(this); 
         panel.add(smile_button); 
         smile_button.setVisible(true);
         smilpcheck = true;
-
+        
         active_button = new JButton("Treat yourself");
         active_button.setBackground(new Color(208, 223, 241));
         active_button.setOpaque(false);
         active_button.setForeground(new Color(208, 223, 241));
         active_button.setBorderPainted(false);
         active_button.setContentAreaFilled(false);
-        active_button.setBounds(1065,300,200, 100);
+        active_button.setBounds(920,370,250, 115);
         active_button.setFont(new Font("Arial", Font.BOLD, 18));   
         active_button.addActionListener(this); 
         panel.add(active_button); 
         active_button.setVisible(true);
         activpcheck = true;
+
+        reflection_buttonn = new JButton("Reflection");
+        reflection_buttonn.setBackground(new Color(208, 223, 241));
+        reflection_buttonn.setOpaque(false);
+        reflection_buttonn.setForeground(new Color(208, 223, 241));
+        reflection_buttonn.setBorderPainted(false);
+        reflection_buttonn.setContentAreaFilled(false);
+        reflection_buttonn.setBounds(535,520,250, 115);
+        reflection_buttonn.setFont(new Font("Arial", Font.BOLD, 18));   
+        reflection_buttonn.addActionListener(this); 
+        panel.add(reflection_buttonn); 
+        reflection_buttonn.setVisible(true);
+        fcheck = true;
 
         strength_button= new JButton("Lend a hand");
         strength_button.setBackground(new Color(208, 223, 241));
@@ -630,30 +650,26 @@ class SoulCarer extends JFrame implements ActionListener{
         strength_button.setForeground(new Color(208, 223, 241));
         strength_button.setBorderPainted(false);
         strength_button.setContentAreaFilled(false);
-        strength_button.setBounds(915,450,250, 100);
+        strength_button.setBounds(825,520,250, 115);
         strength_button.setFont(new Font("Arial", Font.BOLD, 18));   
         strength_button.addActionListener(this); 
         panel.add(strength_button); 
         strength_button.setVisible(true);
         strengthcheck = true;
 
-       done= new JButton("Done");
-       done.setBackground(Color.WHITE);
-       done.setOpaque(true);
-       done.setForeground(Color.BLACK);
-       done.setBorderPainted(true);
-       done.setContentAreaFilled(true);
-       done.setBounds(820,560,100,30);   
-       done.addActionListener(this); 
-       panel.add(done); 
-       done.setVisible(true);
-
+        done= new JButton("Done");
+        done.setForeground(Color.BLACK);
+        done.setBounds(1030,720,100,30);   
+        done.addActionListener(this); 
+        panel.add(done); 
+        done.setVisible(true);
+ 
         back= new JButton("<back");
         back.setOpaque(false);
         back.setForeground(Color.BLACK);
         back.setBorderPainted(false);
         back.setContentAreaFilled(false);
-        back.setBounds(20,550,100, 20);  
+        back.setBounds(110,620,100, 20);  
         back.addActionListener(this); 
         panel.add(back); 
         back.setVisible(true);
@@ -672,7 +688,7 @@ class SoulCarer extends JFrame implements ActionListener{
 
         panel.setLayout(null);
         background = new JLabel(new ImageIcon("ratebgs/Soul care.png"));
-        background.setBounds(0,0,1350,650);
+        background.setBounds(0,0,1200,800);
         panel.add(background);
 
 
@@ -793,11 +809,11 @@ class SoulCarer extends JFrame implements ActionListener{
          }
          if(score>9)
          {
-            display_score.setBounds(165,192,198,213);
+            display_score.setBounds(142,253,198,213);
          }
          if(score<10)
          {
-           display_score.setBounds(186,196,198,213);
+           display_score.setBounds(157,253,198,213);
          }
          display_score.setText(String.valueOf(score));
          display_score.setVisible(true);
@@ -807,19 +823,23 @@ class SoulCarer extends JFrame implements ActionListener{
             pcsql health = new pcsql();
             health.add_data_rate_attitude(Example.cutomer_username,score,lcheck,gcheck,fcheck,pcheck,readcheck,smilpcheck,activpcheck,strengthcheck);
            
-           if(score<8){
-            result.setText("You need to work more on your health :(");
-            result.setVisible(true);
-           }
-           else if(score>7 && score<12){
-            result.setLocation(60,500);
-            result.setText("Good Job! You're on the right track");
-            result.setVisible(true);
-           }
-           else if(score>=12){
-            result.setLocation(80,500);
-            result.setText("Wow! Thats a great score!");
-            result.setVisible(true);
+            if(score<8)
+            {
+             result.setLocation(10,720);
+             result.setText("You need to work more on your health :(");
+             result.setVisible(true);
+            }
+            else if(score>7 && score<12)
+            {
+             result.setLocation(30,720);
+             result.setText("Good Job! You're on the right track");
+             result.setVisible(true);
+            }
+            else if(score>12)
+            {
+             result.setLocation(50,720);
+             result.setText("Wow! Thats a great score!");
+             result.setVisible(true);
            }
          }
 
@@ -915,128 +935,141 @@ class Habit extends JFrame implements ActionListener
      Habit()
      {    
         setTitle("Habit Tracker");
-        setSize(1000,500);
+        setSize(1200,800);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
-
         
         c.setLayout(null);
         c.setBackground(new Color(144, 190, 171));
 
         back=new JButton("Back");
         back.setSize(160, 25);
-        back.setLocation(90, 420);
+        back.setLocation(137, 660);
         c.add(back);
         back.addActionListener(this);
         
         submit=new JButton("Submit");
         submit.setSize(160, 25);
-        submit.setLocation(280, 420);
+        submit.setLocation(400, 660);
         c.add(submit);
         submit.addActionListener(this);
 
         save=new JButton("Save");
         save.setSize(160, 25);
-        save.setLocation(764, 420);
+        save.setLocation(920, 660);
         c.add(save);
         save.addActionListener(this);
 
         
         slabel=new JLabel("Sleep Duration (hours):");
-        slabel.setSize(200, 20);
-        slabel.setLocation(100, 75);
+        slabel.setFont(new Font("Lucida Grande", Font.PLAIN,17));
+        slabel.setSize(300, 20);
+        slabel.setLocation(140, 137);
         c.add(slabel);
         
         elabel=new JLabel("Workout Duration (mins):");
-        elabel.setSize(200, 20);
-        elabel.setLocation(330, 75);
+        elabel.setFont(new Font("Lucida Grande", Font.PLAIN,17));
+        elabel.setSize(300, 20);
+        elabel.setLocation(370, 135);
         c.add(elabel);
 
         fitlabel=new JLabel("Categorize Today's workout (pick all that apply):");
-        fitlabel.setSize(300,20);
-        fitlabel.setLocation(100,135);
+        fitlabel.setFont(new Font("Lucida Grande", Font.PLAIN,17));
+        fitlabel.setSize(400,20);
+        fitlabel.setLocation(140,220);
         c.add(fitlabel);
 
-        dietlabel=new JLabel("Describe Today's Diet:");
-        dietlabel.setSize(300, 20);
-        dietlabel.setLocation(100, 355);
-        c.add(dietlabel);
-        
-        wlabel=new JLabel("Workout Flow:");
-        wlabel.setSize(300, 20);
-        wlabel.setLocation(100, 285);
-        c.add(wlabel);
-
-        text=new JLabel("");
-        text.setSize(450,20);
-        text.setLocation(20,455);
-        c.add(text);
        
         JCheckBox f1= new JCheckBox("High Intensity Interval Training");
-        f1.setSize(250,30);
-        f1.setLocation(94,160);
+        f1.setFont(new Font("Lucida Grande", Font.PLAIN,17));
+        f1.setSize(300,30);
+        f1.setLocation(134,260);
         c.add(f1);
         f1.addActionListener(this);
 
-        JCheckBox f2= new JCheckBox("Stretches and Flexibility Training");
-        f2.setSize(250,30);
-        f2.setLocation(94,185);
-        c.add(f2);
-
         JCheckBox f3= new JCheckBox("Low and Moderate Impact");
-        f3.setSize(250,30);
-        f3.setLocation(94,210);
+        f3.setFont(new Font("Lucida Grande", Font.PLAIN,17));
+        f3.setSize(300,30);
+        f3.setLocation(134,290);
         c.add(f3);
 
         JCheckBox f4= new JCheckBox("Cardio");
-        f4.setSize(250,30);
-        f4.setLocation(94,235);
+        f4.setFont(new Font("Lucida Grande", Font.PLAIN,17));
+        f4.setSize(300,30);
+        f4.setLocation(134,320);
         c.add(f4);
 
+        JCheckBox f2= new JCheckBox("Stretches and Flexibility Training");
+        f2.setFont(new Font("Lucida Grande", Font.PLAIN,17));
+        f2.setSize(400,30);
+        f2.setLocation(134,350);
+        c.add(f2);
+
         JCheckBox f5= new JCheckBox("Weights");
-        f5.setSize(100,30);
-        f5.setLocation(355,157);
+        f5.setFont(new Font("Lucida Grande", Font.PLAIN,17));
+        f5.setSize(300,30);
+        f5.setLocation(475,260);
         c.add(f5);
 
-        JCheckBox f6= new JCheckBox("Pilates");
-        f6.setSize(100,30);
-        f6.setLocation(355,183);
-        c.add(f6);
-
         JCheckBox f7= new JCheckBox("Zumba");
-        f7.setSize(100,30);
-        f7.setLocation(355, 207);
+        f7.setFont(new Font("Lucida Grande", Font.PLAIN,17));
+        f7.setSize(300,30);
+        f7.setLocation(475, 290);
         c.add(f7);
 
         JCheckBox f8= new JCheckBox("Yoga");
-        f8.setSize(100,30);
-        f8.setLocation(355,233);
+        f8.setFont(new Font("Lucida Grande", Font.PLAIN,17));
+        f8.setSize(300,30);
+        f8.setLocation(475,320);
         c.add(f8);
+
+        JCheckBox f6= new JCheckBox("Pilates");
+        f6.setFont(new Font("Lucida Grande", Font.PLAIN,17));
+        f6.setSize(300,30);
+        f6.setLocation(475,350);
+        c.add(f6);
+
+        wlabel=new JLabel("Workout Flow:");
+        wlabel.setFont(new Font("Lucida Grande", Font.PLAIN,17));
+        wlabel.setSize(300, 20);
+        wlabel.setLocation(146, 450);
+        c.add(wlabel);
+
+        fit =new JTextArea();
+        fit.setSize(180, 50);
+        fit.setLocation(370,450);
+        c.add(fit);
+
+        dietlabel=new JLabel("Describe Today's Diet:");
+        dietlabel.setFont(new Font("Lucida Grande", Font.PLAIN,17));
+        dietlabel.setSize(400, 20);
+        dietlabel.setLocation(146, 550);
+        c.add(dietlabel);
+        
+        diet =new JTextArea();
+        diet.setSize(180, 50);
+        diet.setLocation(370,550);
+        c.add(diet);
+        
+        text=new JLabel("");
+        text.setSize(450,20);
+        text.setLocation(410,620);
+        c.add(text);
 
         String hrs[]={"01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18", "19","20","21","22","23","24"};
         String mins[] ={"10","20","30","40","50","60","70","80","90","100",">100"};
         
         sleep_tracker=new JComboBox(hrs);
-        sleep_tracker.setBounds(96, 103, 70, 20);
+        sleep_tracker.setBounds(140, 183, 70, 20);
         c.add(sleep_tracker);
         
         exercise_time=new JComboBox(mins);
-        exercise_time.setBounds(355, 103, 70, 20);
+        exercise_time.setBounds(370, 183, 70, 20);
         c.add(exercise_time);
 
-        diet =new JTextArea();
-        diet.setSize(180, 50);
-        diet.setLocation(257,287);
-        c.add(diet);
-        
-        fit =new JTextArea();
-        fit.setSize(180, 50);
-        fit.setLocation(257,357);
-        c.add(fit);
-
         report=new JTextArea();
-        report.setSize(400,320);
-        report.setLocation(515, 85);
+        report.setSize(400,380);
+        report.setLocation(670, 220);
         report.setEditable(false);
         c.add(report);
         c.setVisible(true);
@@ -1093,7 +1126,7 @@ class Lol extends JFrame implements ActionListener
         setVisible(true);
     
         setTitle("Habit Tracker");
-        setSize(620,350);
+        setSize(1200,800);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 
@@ -1101,32 +1134,32 @@ class Lol extends JFrame implements ActionListener
         c.setBackground(new Color(232, 245, 223));
         
         text = new JLabel("How Are You Feeling, Today?");
-        text.setSize(450,30);
-        text.setLocation(125,50);
-        text.setFont(new Font("Contrast", Font.BOLD, 25));
+        text.setSize(600,35);
+        text.setLocation(400,200);
+        text.setFont(new Font("Contrast", Font.BOLD, 30));
         c.add(text);
 
         back= new JButton("Back");
         back.setSize(120,25);
-        back.setLocation(120, 255);
+        back.setLocation(440, 500);
         c.add(back);
         back.addActionListener(this);
 
         save= new JButton("Save");
         save.setSize(120,25);
-        save.setLocation(240, 255);
+        save.setLocation(560, 500);
         c.add(save);
         save.addActionListener(this);
 
         next= new JButton("Next");
         next.setSize(120,25);
-        next.setLocation(360, 255);
+        next.setLocation(680, 500);
         c.add(next);
         next.addActionListener(this);
 
         emoji1= new JButton();
-        emoji1.setSize(75, 75);
-        emoji1.setLocation(50, 150);
+        emoji1.setSize(125, 125);
+        emoji1.setLocation(290, 320);
         c.add(emoji1);
         emoji1.setContentAreaFilled(false);
         emoji1.setBorderPainted(false);
@@ -1136,8 +1169,8 @@ class Lol extends JFrame implements ActionListener
         e1= true;
 
         emoji2= new JButton();
-        emoji2.setSize(75, 75);
-        emoji2.setLocation(160, 153);
+        emoji2.setSize(125, 125);
+        emoji2.setLocation(420, 320);
         c.add(emoji2);
         emoji2.setContentAreaFilled(false);
         emoji2.setBorderPainted(false);
@@ -1147,8 +1180,8 @@ class Lol extends JFrame implements ActionListener
         e2= true;
       
         emoji3= new JButton();
-        emoji3.setSize(75, 75);
-        emoji3.setLocation(270, 153);
+        emoji3.setSize(125, 125);
+        emoji3.setLocation(550, 320);
         c.add(emoji3);
         emoji3.setContentAreaFilled(false);
         emoji3.setBorderPainted(false);
@@ -1158,8 +1191,8 @@ class Lol extends JFrame implements ActionListener
         e3= true;
 
         emoji4= new JButton();
-        emoji4.setSize(75, 75);
-        emoji4.setLocation(380, 153);
+        emoji4.setSize(125, 125);
+        emoji4.setLocation(675, 320);
         c.add(emoji4);
         emoji4.setContentAreaFilled(false);
         emoji4.setBorderPainted(false);
@@ -1169,8 +1202,8 @@ class Lol extends JFrame implements ActionListener
         e4= true;
 
         emoji5= new JButton();
-        emoji5.setSize(75, 75);
-        emoji5.setLocation(490, 153);
+        emoji5.setSize(125, 125);
+        emoji5.setLocation(810, 320);
         c.add(emoji5);
         emoji5.setContentAreaFilled(false);
         emoji5.setBorderPainted(false);
@@ -1185,17 +1218,17 @@ class Lol extends JFrame implements ActionListener
 
         day=new JComboBox(dd);
         day.setSize(80, 30);
-        day.setLocation(180, 105);
+        day.setLocation(485, 260);
         c.add(day);
 
         month=new JComboBox(mm);
         month.setSize(85, 30);
-        month.setLocation(260, 105);
+        month.setLocation(580, 260);
         c.add(month);
   
         year=new JComboBox(yyyy);
         year.setSize(90, 30);
-        year.setLocation(345, 105);
+        year.setLocation(680, 260);
         c.add(year);
         setVisible(true);
     }
@@ -1338,4 +1371,5 @@ class Lol extends JFrame implements ActionListener
 	
 	}
 }*/
+
 
